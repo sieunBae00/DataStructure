@@ -147,5 +147,40 @@ def checkSt(s):
             i += 1
             q.dequeue()
     return True
-   
-   
+```
+
+3.
+```py
+
+def sizecheck(self):
+    return self.__queue.size()
+
+for i in range(a.sizecheck()):
+    b.enqueue(a.front())
+```
+
+4. ```py
+
+
+5.
+```py
+
+s1 = ListQueue()
+s2 = ListQueue()
+
+def enqueue(self, x): 
+    s1.push(x)
+    
+def dequeue(self): 
+    while(s1.size()!=1):
+        s2.push(s1.top())
+        s1.pop()
+        
+    int x = s1.top()
+    s1.pop()
+
+    while(s2.size()!=0):
+        s1.push(s2.top())
+        s2.pop()
+
+    return x;
