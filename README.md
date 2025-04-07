@@ -101,3 +101,32 @@ public:
 ```
 
 # 3. Chapter 7
+
+1.
+```py
+class ListQueue:
+    def __init__(self):
+        self.__queue = []
+
+    def enqueue(self, x):
+        self.__queue.insert(0, x)
+
+    def dequeue(self):
+        self.__queue.pop(len(self.__queue)-1)
+
+    def front(self):
+        return self.__queue[len(self.__queue)-1]
+
+    def isEmpty(self)->bool:
+        return len(self.__queue) == 0
+
+    def dequeueAll(self):
+        self.__queue.clear()
+
+    def __str__(self):
+        return str(self.__queue)
+```
+
+2. ```py
+   
+   
