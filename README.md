@@ -127,6 +127,25 @@ class ListQueue:
         return str(self.__queue)
 ```
 
-2. ```py
+2.
+```py
+
+def checkSt(s):
+    q = ListQueue()
+
+    i = 0
+
+    while(s[i] != '$'):
+        q.enqueue(s[i])
+        i += 1
+    i += 1
+
+    while(i <= len(s)-1):
+        if(q.front() != s[i]):
+            return False
+        else:
+            i += 1
+            q.dequeue()
+    return True
    
    
