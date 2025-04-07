@@ -159,14 +159,32 @@ for i in range(a.sizecheck()):
     b.enqueue(a.front())
 ```
 
-4. ```py
+4.
+```py
+
+#q1, q2 : 큐
+
+def push(x):
+    q1.push(x)
+
+def pop():
+    for i in range(q1.size()-1):
+        q2.push(q1.peek())
+        q1.pop()
+
+    x = q1.peek()
+    q1.pop()
+
+    swap(q1, q2)
+
+    return x
+```
 
 
 5.
 ```py
 
-s1 = ListQueue()
-s2 = ListQueue()
+#s1, s2 : 스택
 
 def enqueue(self, x): 
     s1.push(x)
