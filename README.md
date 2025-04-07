@@ -1,6 +1,6 @@
 # 1. LeetCode 225
 
-'''cpp
+```cpp
 
 #include <iostream>
 
