@@ -217,3 +217,15 @@ enqueue()의 수행 시간 : O(n) (맨 뒤에서 enqueue() 할 경우 n)
 
 dequeue()의 수행 시간 : O(n) (맨 앞에서 dequeue() 할 경우 n)
 
+
+8.
+```py
+
+def enqueue_rev(self, x):
+    self.__queue.insert(0,x)
+
+def dequeue_rev(self):
+    self.__queue.pop()
+```
+를 추가
+
