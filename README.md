@@ -39,3 +39,7 @@ public:
         return q.empty();
     }
 };
+```
+
+
+# 2. LeetCode 232
